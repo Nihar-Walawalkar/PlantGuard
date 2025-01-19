@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Detection</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #e9ecef;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .heading {
+            color: #007bff;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .upload-box {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .upload-btn {
+            margin-top: 20px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+        }
+
+        .upload-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .icon {
+            font-size: 48px;
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="upload-box">
+            <i class="fas fa-leaf icon"></i>
+            <h1 class="heading">Plant Disease Detection</h1>
+            <p>Upload an image of a plant leaf to detect its condition. Our model will analyze the leaf and provide a
+                diagnosis.</p>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" class="form-control-file" required>
+                <button type="submit" class="btn btn-primary upload-btn">Upload Image</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
