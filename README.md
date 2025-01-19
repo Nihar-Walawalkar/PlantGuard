@@ -14,7 +14,7 @@
 
 ---
 
-## Dataset
+## [Dataset](https://www.kaggle.com/datasets/sorooshtootoonchian/plantpathology2020fgvc7resized "Kaggle link to dataset")
 The **Plant Pathology dataset** is used for training and evaluation. Data augmentation techniques include:
 - Resizing images to 128x128.
 - Applying random horizontal and vertical flips.
@@ -29,6 +29,12 @@ The **Plant Pathology dataset** is used for training and evaluation. Data augmen
 - **Deep Learning Framework**: PyTorch
 - **Model Architecture**: ResNet-18
 - **Deployment**: Flask-based app (compatible with Docker or cloud services)
+
+---
+
+## Demo
+
+https://github.com/user-attachments/assets/932fb1c0-4edf-4905-ab19-7c56fa4426bf
 
 ---
 
@@ -91,10 +97,10 @@ class PlantDiseaseModel(nn.Module):
 ```
 
 ### Training and Evaluation:
-Optimizer: Adam
-Scheduler: ReduceLROnPlateau
-Loss Function: Binary Cross-Entropy with Logits
-Mixed Precision: Enabled via torch.cuda.amp
+Optimizer: Adam  
+Scheduler: ReduceLROnPlateau  
+Loss Function: Binary Cross-Entropy with Logits  
+Mixed Precision: Enabled via torch.cuda.amp  
 
 ### Clone the repository:
 ```bash
@@ -106,3 +112,8 @@ cd PlantGuard
 ```bash
 python app.py
 ```
+
+### Acknowledgments:
+- **Dataset**: Plant Pathology dataset.
+- **Model**: ResNet-18 by Microsoft Research.
+- **Framework**: PyTorch.
